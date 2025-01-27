@@ -1,0 +1,19 @@
+{
+  "name": "boot-scene",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/scenes/boot/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/scenes/boot",
+        "main": "packages/scenes/boot/src/index.ts",
+        "tsConfig": "packages/scenes/boot/tsconfig.lib.json",
+        "assets": ["packages/scenes/boot/*.md"]
+      }
+    }
+  }
+}

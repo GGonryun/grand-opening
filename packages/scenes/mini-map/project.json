@@ -1,0 +1,19 @@
+{
+  "name": "minimap-scene",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/scenes/mini-map/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/scenes/mini-map",
+        "main": "packages/scenes/mini-map/src/index.ts",
+        "tsConfig": "packages/scenes/mini-map/tsconfig.lib.json",
+        "assets": ["packages/scenes/mini-map/*.md"]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "player-input-scene",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/scenes/player-input/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/scenes/player-input",
+        "main": "packages/scenes/player-input/src/index.ts",
+        "tsConfig": "packages/scenes/player-input/tsconfig.lib.json",
+        "assets": ["packages/scenes/player-input/*.md"]
+      }
+    }
+  }
+}

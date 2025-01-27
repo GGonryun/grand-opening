@@ -1,0 +1,19 @@
+{
+  "name": "hud-scene",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/scenes/hud/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/scenes/hud",
+        "main": "packages/scenes/hud/src/index.ts",
+        "tsConfig": "packages/scenes/hud/tsconfig.lib.json",
+        "assets": ["packages/scenes/hud/*.md"]
+      }
+    }
+  }
+}
